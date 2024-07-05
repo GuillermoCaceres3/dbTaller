@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.dbtaller.HelloController">
+   <children>
+      <Label layoutX="86.0" layoutY="20.0" text="Agregar nuevo empleado" />
+      <Label layoutX="31.0" layoutY="53.0" text="Nombre:" />
+      <Label layoutX="31.0" layoutY="89.0" text="Apellido:" />
+      <TextField fx:id="nombre" layoutX="92.0" layoutY="49.0" />
+      <TextField fx:id="apellido" layoutX="92.0" layoutY="85.0" />
+      <Button layoutX="124.0" layoutY="124.0" mnemonicParsing="false" onAction="#agregarEmpleado" text="Agregar" />
+      <Label layoutX="393.0" layoutY="20.0" text="Agregar nueva tarea" />
+      <ComboBox fx:id="comboTarea" layoutX="322.0" layoutY="49.0" prefHeight="25.0" prefWidth="87.0" promptText="Tarea" />
+      <DatePicker fx:id="dateTarea" layoutX="440.0" layoutY="49.0" prefHeight="25.0" prefWidth="135.0" promptText="Fecha de inicio" />
+      <ComboBox fx:id="comboEmpleado" layoutX="322.0" layoutY="86.0" prefHeight="25.0" prefWidth="108.0" promptText="Empleado" />
+      <TextField fx:id="precio" layoutX="501.0" layoutY="94.0" prefHeight="25.0" prefWidth="59.0" promptText="0.00" />
+      <Label layoutX="447.0" layoutY="98.0" prefHeight="17.0" prefWidth="66.0" text="Precio $: " />
+      <Button layoutX="411.0" layoutY="124.0" mnemonicParsing="false" onAction="#agregarRegistro" text="Agregar" />
+      <DatePicker fx:id="fecha1" layoutX="14.0" layoutY="210.0" prefHeight="17.0" prefWidth="108.0" />
+      <DatePicker fx:id="fecha2" layoutX="14.0" layoutY="242.0" prefHeight="17.0" prefWidth="108.0" />
+      <ComboBox fx:id="comboEmpleadoConsulta" layoutX="129.0" layoutY="210.0" prefHeight="17.0" prefWidth="108.0" promptText="Empleado" />
+      <ListView fx:id="listaTareas" layoutX="14.0" layoutY="273.0" prefHeight="121.0" prefWidth="262.0" />
+      <Button layoutX="154.0" layoutY="242.0" mnemonicParsing="false" onAction="#consultaFechas" text="Buscar" />
+   </children>
+</AnchorPane>
